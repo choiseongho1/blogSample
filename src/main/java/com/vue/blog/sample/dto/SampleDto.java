@@ -28,5 +28,6 @@ public class SampleDto {
         return Sample.builder()
                 .name(name)
                 .build();
+                
     }
 }
