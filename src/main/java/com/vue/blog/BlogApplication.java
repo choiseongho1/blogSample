@@ -11,3 +11,5 @@ public class BlogApplication {
 	}
 
 }
+
+// 2023.01.02 MAC 세팅
