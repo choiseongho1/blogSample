@@ -13,12 +13,12 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode(callSuper = false)
 public class SampleDto {
-    private Long id;
+    private String id;
     private String name;
 
     @QueryProjection
     public SampleDto(
-            Long id,
+            String id,
             String name) {
         this.id = id;
         this.name = name;
@@ -28,6 +28,6 @@ public class SampleDto {
         return Sample.builder()
                 .name(name)
                 .build();
-                
+
     }
 }

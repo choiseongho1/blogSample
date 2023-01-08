@@ -21,7 +21,7 @@ public class SampleServiceImpl implements SampleService {
     }
 
     @Override
-    public SampleDto getSample(Long id) {
+    public SampleDto getSample(String id) {
         Sample sample = sampleRepository.findById(id).get();
 
         SampleDto sampleDto = SampleDto.builder()
@@ -39,7 +39,7 @@ public class SampleServiceImpl implements SampleService {
     }
 
     @Override
-    public void deleteSample(Long id) {
+    public void deleteSample(String id) {
         sampleRepository.delete(sampleRepository.findById(id).get());
     }
 }

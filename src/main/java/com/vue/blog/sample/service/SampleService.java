@@ -8,10 +8,10 @@ import com.vue.blog.sample.dto.SampleDto;
 public interface SampleService {
     public List<Sample> list();
 
-    public SampleDto getSample(Long id);
+    public SampleDto getSample(String id);
 
     public Sample saveSample(SampleDto sampleDto);
 
-    public void deleteSample(Long id);
+    public void deleteSample(String id);
 
 }

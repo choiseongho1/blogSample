@@ -29,7 +29,7 @@ public class SampleController {
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/sample/{id}")
-    public SampleDto getBoard(@PathVariable Long id) {
+    public SampleDto getBoard(@PathVariable String id) {
         return sampleService.getSample(id);
     }
 
@@ -40,8 +40,8 @@ public class SampleController {
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
-    @DeleteMapping("/sample")
-    public void delete(@PathVariable Long id) {
+    @DeleteMapping("/sample/{id}")
+    public void delete(@PathVariable String id) {
         sampleService.deleteSample(id);
     }
 }
